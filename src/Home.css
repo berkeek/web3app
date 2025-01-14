@@ -1,0 +1,96 @@
+.home-container {
+  max-width: 70%; /* Slightly narrower width for a compact design */
+  margin: 0 auto;
+  padding: 15px; /* Reduced padding */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.4; /* Slightly reduced line height for compactness */
+}
+
+.home-container h1 {
+  color: #2c3e50;
+  margin-bottom: 15px; /* Reduced margin */
+  font-size: 2rem; /* Smaller font size */
+}
+
+.home-container p {
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: #34495e;
+}
+
+.info-section, .page-guide {
+  margin: 15px 0; /* Reduced margin between sections */
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 12px; /* Reduced padding */
+  border-radius: 6px; /* Smaller border radius */
+  border: 1px solid #ccc;
+}
+
+.info-section h2, .page-guide h2 {
+  color: #16a085;
+  margin-bottom: 8px; /* Reduced margin below headings */
+  font-size: 1.2rem; /* Smaller font size */
+}
+
+.info-section ul, .page-guide ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li, .page-guide li {
+  margin-bottom: 8px; /* Reduced spacing between list items */
+  font-size: 0.85rem; /* Smaller font size for list items */
+}
+
+.info-section li::before, .page-guide li::before {
+  content: "✔️";
+  color: #16a085;
+  margin-right: 6px; /* Slightly reduced spacing */
+}
+
+.closing-note {
+  margin-top: 20px; /* Reduced margin above closing note */
+  font-size: 1rem; /* Smaller font size */
+  font-weight: bold;
+  color: #27ae60;
+}
+
+/* Media Query for 1920px */
+@media (max-width: 1920px) {
+  .home-container h1 {
+    font-size: 1.8rem;
+  }
+  .info-section h2, .page-guide h2 {
+    font-size: 1.1rem;
+  }
+  .info-section li, .page-guide li {
+    font-size: 0.8rem;
+  }
+  .closing-note {
+    font-size: 0.9rem;
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1366px) {
+  .home-container {
+    max-width: 80%;
+    padding: 10px;
+  }
+  .home-container h1 {
+    font-size: 1.5rem;
+  }
+  .info-section, .page-guide {
+    padding: 10px;
+  }
+  .info-section h2, .page-guide h2 {
+    font-size: 1rem;
+  }
+  .info-section li, .page-guide li {
+    font-size: 0.75rem;
+  }
+  .closing-note {
+    font-size: 0.85rem;
+  }
+}

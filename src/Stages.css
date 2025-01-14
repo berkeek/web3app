@@ -1,0 +1,97 @@
+.stages-container {
+  padding: 20px;
+  max-width: 1200px; /* Set a maximum width to center content */
+  margin: 0 auto; /* Center the container on the page */
+  text-align: center; /* Center-align the title */
+}
+
+.stages-container .sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns for better alignment */
+  gap: 20px; /* Space between sections */
+  justify-content: center; /* Center the sections horizontally */
+  align-items: start; /* Align sections vertically at the top */
+}
+
+.stages-container .section {
+  background-color: #f9f9f9; /* Slight background color for distinction */
+  padding: 20px; /* Add more padding for spacing */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  text-align: center; /* Center align text inside sections */
+  height: auto; /* Adjust height based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.stages-container .input-group {
+  margin-bottom: 15px; /* Add more space between input groups */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align input group */
+  width: 100%; /* Ensure inputs take full width */
+}
+
+.stages-container label {
+  margin-bottom: 8px; /* Add more space below labels */
+  font-weight: bold;
+  font-size: 14px; /* Slightly larger font size */
+  text-align: center; /* Center align labels */
+}
+
+.stages-container input {
+  padding: 10px; /* Add more padding for input fields */
+  border: 1px solid #888;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  max-width: 300px; /* Limit the maximum width of input fields */
+  box-sizing: border-box;
+}
+
+.stages-container input:focus {
+  border-color: #555;
+}
+
+.stages-container button {
+  padding: 10px 15px; /* Adjust button size for better visibility */
+  border: none;
+  border-radius: 20px;
+  background-color: #28a745; /* Green background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px; /* Add more space above buttons */
+  align-self: center; /* Center align buttons */
+}
+
+.stages-container button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.stages-container .message {
+  margin-top: 15px;
+  padding: 10px; /* Adjust padding for better visibility */
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+  border-radius: 4px;
+  color: #155724;
+}
+
+.stages-container p {
+  margin-top: 10px;
+  word-break: break-word; /* Ensure long text breaks properly */
+}
+
+.stages-container a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.stages-container a:hover {
+  text-decoration: underline;
+}

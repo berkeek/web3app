@@ -1,0 +1,143 @@
+.owner-container {
+  padding: 15px; /* Reduced padding */
+  max-width: 85%; /* Adjust width to fit better on larger screens */
+  margin: 0 auto;
+  text-align: center;
+}
+
+.owner-container .sections {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Adjust grid columns for smaller sections */
+  gap: 15px; /* Reduce gap between sections */
+  justify-content: center;
+  align-items: start;
+}
+
+.owner-container .section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px; /* Reduce padding */
+  border: 1px solid rgba(0, 128, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: auto;
+  min-height: 300px; /* Reduced minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.owner-container .input-group {
+  margin-bottom: 10px; /* Reduced space between input groups */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.owner-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9rem; /* Slightly smaller font size */
+  text-align: center;
+}
+
+.owner-container input {
+  padding: 8px; /* Reduced padding */
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 230px; /* Reduced input width */
+  box-sizing: border-box;
+}
+
+.owner-container input:focus {
+  border-color: #555;
+}
+
+.owner-container button {
+  padding: 8px 12px; /* Reduced button padding */
+  font-size: 0.9rem; /* Smaller font size */
+  border: none;
+  border-radius: 20px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.owner-container button:hover {
+  background-color: #218838;
+  transform: scale(1.03); /* Slightly smaller scale effect */
+}
+
+.owner-container .message {
+  margin-top: 10px; /* Reduced margin */
+  padding: 8px;
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+  border-radius: 4px;
+  color: #155724;
+}
+
+.owner-container p {
+  margin-top: 8px;
+  word-break: break-word;
+}
+
+.owner-container a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.owner-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1920px) {
+  .owner-container .sections {
+    grid-template-columns: repeat(4, minmax(180px, 1fr)); /* Smaller grid columns */
+  }
+  .owner-container .section {
+    min-height: 280px; /* Further reduce height */
+  }
+  .owner-container input {
+    max-width: 220px;
+  }
+  .owner-container button {
+    font-size: 0.85rem; /* Smaller button font size */
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .owner-container .sections {
+    grid-template-columns: repeat(2, minmax(180px, 1fr)); /* Two columns for tablets */
+  }
+  .owner-container .section {
+    padding: 12px;
+    min-height: 250px;
+  }
+  .owner-container button {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .owner-container .sections {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+  .owner-container .section {
+    padding: 10px;
+    min-height: 220px;
+  }
+  .owner-container button {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+}

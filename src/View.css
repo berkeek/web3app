@@ -1,0 +1,144 @@
+.view-container {
+  padding: 20px; /* Standard padding for top-level container */
+  max-width: 90%; /* Adjust max width to suit different screens */
+  margin: 0 auto; /* Center-align the container */
+  text-align: center; /* Center-align the title */
+}
+
+.view-container .sections {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(250px, 1fr)); /* Dynamic columns based on screen size */
+  gap: 20px; /* Maintain spacing between sections */
+  justify-content: center; /* Center the grid horizontally */
+  align-items: start; /* Align sections vertically at the top */
+}
+
+.view-container .section {
+  background-color: #f9f9f9; /* Slight background color for distinction */
+  padding: 15px; /* Standard padding for section content */
+  border: 1px solid #ccc; /* Add border for separation */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width/height */
+  text-align: center; /* Center-align content */
+  height: auto; /* Let the height adjust to content */
+  min-height: 250px; /* Set a proportional minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.view-container .input-group {
+  margin-bottom: 15px; /* Add spacing between input groups */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align input elements */
+  width: 100%; /* Ensure inputs span the container width */
+}
+
+.view-container label {
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold;
+  font-size: 1rem; /* Adjust font size for readability */
+  text-align: center; /* Center-align labels */
+}
+
+.view-container input {
+  padding: 8px; /* Standard padding for input fields */
+  border: 1px solid #888;
+  border-radius: 4px;
+  transition: border-color 0.3s ease; /* Add smooth transition for focus effect */
+  width: 100%;
+  max-width: 300px; /* Limit the width of input fields */
+  box-sizing: border-box;
+}
+
+.view-container input:focus {
+  border-color: #555; /* Darken border color on focus */
+}
+
+.view-container button {
+  padding: 10px 15px; /* Adjust button size for visibility */
+  border: none;
+  border-radius: 20px; /* Rounded corners for buttons */
+  background-color: #28a745; /* Green background color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+  margin-top: 15px; /* Space above buttons */
+  align-self: center; /* Center-align buttons */
+  font-size: 1rem; /* Adjust font size for readability */
+}
+
+.view-container button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.view-container .message {
+  margin-top: 15px; /* Space above messages */
+  padding: 10px; /* Standard padding for messages */
+  background-color: #d4edda; /* Light green background for success */
+  border-left: 5px solid #28a745; /* Green border on the left */
+  border-radius: 4px; /* Rounded corners */
+  color: #155724; /* Dark green text */
+}
+
+.view-container p {
+  margin-top: 10px; /* Space above paragraphs */
+  word-break: break-word; /* Break long words for better readability */
+}
+
+.view-container a {
+  color: #1e90ff; /* Blue color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.view-container a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Full HD and Below */
+@media (max-width: 1920px) {
+  .view-container .sections {
+    grid-template-columns: repeat(5, minmax(200px, 1fr)); /* Adjust grid columns for Full HD */
+  }
+  .view-container .section {
+    padding: 10px; /* Slightly reduce padding for smaller screens */
+    min-height: 220px; /* Reduce min-height for sections */
+  }
+  .view-container input {
+    max-width: 280px; /* Adjust max width of input fields */
+  }
+  .view-container button {
+    font-size: 0.9rem; /* Reduce font size slightly */
+    padding: 8px 12px; /* Adjust padding */
+  }
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .view-container .sections {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust for tablets */
+    gap: 15px; /* Reduce gap between sections */
+  }
+  .view-container .section {
+    min-height: 200px; /* Further reduce min-height */
+  }
+  .view-container input {
+    max-width: 250px; /* Reduce max width of inputs */
+  }
+}
+
+@media (max-width: 768px) {
+  .view-container .sections {
+    grid-template-columns: 1fr; /* Single column for smaller devices */
+  }
+  .view-container .section {
+    padding: 8px; /* Reduce padding */
+  }
+  .view-container button {
+    padding: 6px 10px; /* Smaller buttons */
+    font-size: 0.8rem; /* Smaller font size */
+  }
+}
