@@ -101,7 +101,7 @@
 /* Media Queries for Full HD and Below */
 @media (max-width: 1920px) {
   .view-container .sections {
-    grid-template-columns: repeat(5, minmax(200px, 1fr)); /* Adjust grid columns for Full HD */
+    grid-template-columns: repeat(5, minmax(200px, 1fr)); 
   }
   .view-container .section {
     padding: 10px; /* Slightly reduce padding for smaller screens */
@@ -119,7 +119,7 @@
 /* Media Queries for Tablet and Mobile */
 @media (max-width: 1024px) {
   .view-container .sections {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust for tablets */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
     gap: 15px; /* Reduce gap between sections */
   }
   .view-container .section {

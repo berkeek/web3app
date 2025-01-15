@@ -7,7 +7,7 @@
 
 .stages-container .sections {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Two columns for better alignment */
+  grid-template-columns: repeat(2, minmax(300px, 1fr)); 
   gap: 20px; /* Space between sections */
   justify-content: center; /* Center the sections horizontally */
   align-items: start; /* Align sections vertically at the top */
@@ -15,7 +15,7 @@
 
 .stages-container .section {
   background-color: #f9f9f9; /* Slight background color for distinction */
-  padding: 20px; /* Add more padding for spacing */
+  padding: 20px; 
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box; /* Ensures padding and borders are included in the width */

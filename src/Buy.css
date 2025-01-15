@@ -7,7 +7,7 @@
 
 .buy-container .sections {
   display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr)); /* Two columns for better alignment */
+  grid-template-columns: repeat(4, minmax(300px, 1fr)); 
   gap: 20px; /* Space between sections */
   justify-content: center; /* Center the sections horizontally */
   align-items: start; /* Align sections vertically at the top */
